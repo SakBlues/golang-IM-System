@@ -1,0 +1,12 @@
+# go coverage
+*.out
+
+# log
+*.log
+
+# IDE
+.idea/
+out/
+.vscode/
+__debug_bin
+.project
