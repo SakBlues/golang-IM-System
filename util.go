@@ -11,7 +11,10 @@ func PrintDesc(msg string) string {
 	return fmt.Sprintf(">>>>> %s <<<<<", msg)
 }
 
-// if succeed, return string end with "\n"
+// read a string end with "\n",
+// and return result will remove the last "\n".
+// use bufio.Reader to read a line,
+// because fmt.scanln will return when reach a blank.
 func Readline() (string, error) {
 	input := bufio.NewReader(os.Stdin)
 	line, err := input.ReadString('\n')
